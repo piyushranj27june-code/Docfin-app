@@ -1,0 +1,98 @@
+{
+  "theme": {
+    "archetype": "1 - Organic & Earthy",
+    "mode": "Light",
+    "rationale": "Medical and financial applications demand trust, calm, and stability. Dark mode can feel too clinical or 'crypto-bro'. This grounded approach creates a clear, premium, and stress-free environment for young professionals."
+  },
+  "colors": {
+    "background": {
+      "primary": "#F9F9F8",
+      "secondary": "#F0EFEA",
+      "card": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#5C5C5C",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#1A4331",
+      "primaryLight": "#E8F3ED",
+      "accent": "#CC5A3A",
+      "accentLight": "#FAEFEA"
+    },
+    "status": {
+      "success": "#2E7D32",
+      "warning": "#F57C00",
+      "error": "#D32F2F",
+      "info": "#0288D1"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": "Manrope",
+      "body": "Work Sans"
+    },
+    "scale": {
+      "h1": "text-4xl tracking-tight font-black",
+      "h2": "text-3xl tracking-tight font-bold",
+      "h3": "text-2xl tracking-tight font-bold",
+      "h4": "text-xl font-semibold",
+      "bodyLarge": "text-base font-normal leading-relaxed",
+      "body": "text-sm font-normal leading-relaxed",
+      "label": "text-xs uppercase tracking-[0.2em] font-semibold"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous spacing. Mobile-first hierarchy with bento-style cards. Tap-friendly interactive areas.",
+    "spacingScale": "Tailwind standard (p-2, p-4, p-6, p-8)",
+    "containerPadding": "px-6 py-8",
+    "cardStyles": "bg-white rounded-2xl shadow-sm border border-[#E5E5E5] p-6",
+    "borderRadius": {
+      "small": "rounded-lg",
+      "medium": "rounded-xl",
+      "large": "rounded-2xl",
+      "full": "rounded-full"
+    }
+  },
+  "components": {
+    "navigation": "Bottom tab bar with distinct selected state (active icon in brand.primary, inactive in text.secondary). No top hamburger menu.",
+    "buttons": "Large touch targets (min 48px height). Primary: bg-[#1A4331] text-white rounded-xl. Secondary: bg-[#E8F3ED] text-[#1A4331] rounded-xl.",
+    "inputs": "NativeWind compatible styling: bg-white border border-[#E5E5E5] rounded-xl px-4 py-3 text-base text-[#1A1A1A].",
+    "charts": "Compact, curved line charts or simple progress rings. Hide grid lines to reduce visual clutter.",
+    "aiInsightsCard": "Special bento card. bg-[#FAEFEA] border border-[#CC5A3A]/20. Use a sparkle icon and deep terracotta text for actionable AI prompts."
+  },
+  "motion_and_interaction": {
+    "screenTransition": "Slide from right or subtle fade-in.",
+    "cardPress": "Scale down slightly (0.98) on press.",
+    "microInteractions": "Use subtle haptic feedback for significant actions like categorizing expense or saving a goal."
+  },
+  "accessibility": {
+    "contrast": "All text must pass WCAG AA. Ensure brand primary against white is readable.",
+    "touchTargets": "Minimum 44x44px for all interactive elements.",
+    "testing": "All interactive and key informational elements MUST include a testID or data-testid attribute in kebab-case."
+  },
+  "media_and_assets": {
+    "icons": "lucide-react-native or @expo/vector-icons (Feather/Phosphor). Clean, 1.5px stroke weight.",
+    "image_urls": {
+      "userProfile": {
+        "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMGluZGlhbiUyMGRvY3RvciUyMHNtaWxpbmclMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODA5Mzg2MDh8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Young Indian doctor smiling. Use for profile avatar."
+      },
+      "aiHeaderBackground": {
+        "url": "https://images.unsplash.com/photo-1758637612272-ee239fe7a1f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG9yZ2FuaWMlMjBzaGFwZXMlMjBmaW5hbmNlJTIwZ3Jvd3RofGVufDB8fHx8MTc4MDkzODYwN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract smooth organic shapes. Use as a subtle background behind the AI insights card or header (opacity 10-20%)."
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "This is a React Native Expo app. You MUST use React Native components (View, Text, ScrollView, TouchableOpacity, etc.) and NativeWind (Tailwind for React Native) for styling.",
+    "Implement bottom tab navigation utilizing Expo Router or React Navigation.",
+    "Do NOT use HTML elements (div, span).",
+    "Integrate 'lucide-react-native' for icons.",
+    "Ensure all buttons, inputs, and interactive cards have `testID` props (or data-testid if on web) for robust testing.",
+    "The AI insight card should feel conversational and warm. Use the 'aiHeaderBackground' image subtly behind it if possible.",
+    "Use standard React Native Chart libraries like `react-native-chart-kit` or `react-native-svg-charts` for the hospital revenue and leakage data.",
+    "Apply 'font-Manrope' to headings and 'font-WorkSans' for body text, ensuring they are loaded via Expo fonts."
+  ]
+}
